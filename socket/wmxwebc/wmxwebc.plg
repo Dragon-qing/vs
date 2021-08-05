@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: wmxwebc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPBAC1.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/wmxwebc.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Administrator\Desktop\wmxwebc\sever.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPBAC1.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPBAC2.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/wmxwebc.pdb" /debug /machine:I386 /out:"Debug/wmxwebc.exe" /pdbtype:sept 
+.\Debug\Client.obj
+.\Debug\sever.obj
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPBAC2.tmp"
+<h3>Output Window</h3>
+Compiling...
+sever.cpp
+Linking...
+sever.obj : error LNK2005: _main already defined in Client.obj
+Client.obj : error LNK2001: unresolved external symbol __imp__closesocket@4
+sever.obj : error LNK2001: unresolved external symbol __imp__closesocket@4
+Client.obj : error LNK2001: unresolved external symbol __imp__recv@16
+sever.obj : error LNK2001: unresolved external symbol __imp__recv@16
+Client.obj : error LNK2001: unresolved external symbol __imp__send@16
+sever.obj : error LNK2001: unresolved external symbol __imp__send@16
+Client.obj : error LNK2001: unresolved external symbol __imp__inet_ntoa@4
+Client.obj : error LNK2001: unresolved external symbol __imp__accept@12
+Client.obj : error LNK2001: unresolved external symbol __imp__listen@8
+Client.obj : error LNK2001: unresolved external symbol __imp__bind@12
+Client.obj : error LNK2001: unresolved external symbol __imp__htons@4
+sever.obj : error LNK2001: unresolved external symbol __imp__htons@4
+Client.obj : error LNK2001: unresolved external symbol __imp__htonl@4
+Client.obj : error LNK2001: unresolved external symbol __imp__socket@12
+sever.obj : error LNK2001: unresolved external symbol __imp__socket@12
+Client.obj : error LNK2001: unresolved external symbol __imp__WSACleanup@0
+sever.obj : error LNK2001: unresolved external symbol __imp__WSACleanup@0
+Client.obj : error LNK2001: unresolved external symbol __imp__WSAStartup@8
+sever.obj : error LNK2001: unresolved external symbol __imp__WSAStartup@8
+sever.obj : error LNK2001: unresolved external symbol __imp__connect@12
+sever.obj : error LNK2001: unresolved external symbol __imp__inet_addr@4
+Debug/wmxwebc.exe : fatal error LNK1120: 14 unresolved externals
+Ö´ÐÐ link.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+wmxwebc.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
